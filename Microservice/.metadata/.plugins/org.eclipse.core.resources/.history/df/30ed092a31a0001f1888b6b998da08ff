@@ -1,0 +1,24 @@
+package Example;
+
+import java.util.Arrays;
+
+public class Test1 {
+	
+	public static void main(String[] args) {
+		
+		String input = "amit@gmail.com";
+		
+		StringBuilder answer = new StringBuilder();
+		
+		String [] test1 = input.split("@");
+		String [] test2 = input.split("\\.");
+		
+		System.out.println(Arrays.toString(test1));
+		System.out.println(Arrays.toString(test2));
+		
+		String op1 = input.charAt(0) + "**"+input.substring(input.length()-1);
+		
+		System.out.println(op1);
+	}
+
+}

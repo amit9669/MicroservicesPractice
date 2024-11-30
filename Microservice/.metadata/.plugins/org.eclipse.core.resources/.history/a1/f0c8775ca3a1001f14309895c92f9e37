@@ -1,0 +1,11 @@
+package com.example.demo.binding;
+
+import lombok.Data;
+
+@Data
+public class StockCalcResponse {
+
+	private String companyName;
+	private Integer portNumber;
+	private Double totalCost;
+}

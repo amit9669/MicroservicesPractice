@@ -1,0 +1,11 @@
+package com.example.demo.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class GreetController {
+
+	public String greteting() {
+		return "Good Morning!!";
+	}
+}

@@ -1,0 +1,21 @@
+package Example;
+
+public class Test2 {
+	
+	public static void main(String[] args) {
+		
+		/*
+		 * String str = "   Hello    World!     ";
+		 * 
+		 * System.out.println(str); System.out.println(str.length());
+		 * 
+		 * String trimmed = str.trim();
+		 * 
+		 * System.out.println(trimmed); System.out.println(trimmed.length());
+		 */
+		
+		String str = "Hello, World!";
+		int index = str.indexOf("World"); // index = 7
+	}
+
+}

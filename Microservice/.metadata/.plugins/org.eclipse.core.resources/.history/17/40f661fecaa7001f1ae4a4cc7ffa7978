@@ -1,0 +1,24 @@
+package Example;
+
+interface DefaultMethodExample {
+	
+	default void defaultMethod() {
+        System.out.println("This is a default method.");
+    }
+	
+	public static void main(String[] args) {
+		System.out.println("Hi it's called main method");
+	}
+
+}
+class MyClass implements DefaultMethodExample {
+    // Inherits defaultMethod
+}
+
+public class Test3 {
+    public static void main(String[] args) {
+        MyClass myClass = new MyClass();
+        myClass.defaultMethod(); // Output: This is a default method.
+        DefaultMethodExample.main();
+    }
+}

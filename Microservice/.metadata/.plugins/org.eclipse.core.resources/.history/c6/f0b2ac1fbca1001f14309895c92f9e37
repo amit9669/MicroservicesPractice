@@ -1,0 +1,14 @@
+spring.application.name=Stock-API-Gateway
+
+server.port=3333
+
+zuul:
+    prefix: /ms
+    routes:
+      stockPrice:
+        path: /api1/**
+        serviceId: Stock-Price-API
+      welcome:
+        calc: /api2/**
+        serviceId: Stock-Calc-API
+        

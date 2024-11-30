@@ -1,0 +1,3 @@
+spring.application.name=Welcome-API
+
+Server.port=1111

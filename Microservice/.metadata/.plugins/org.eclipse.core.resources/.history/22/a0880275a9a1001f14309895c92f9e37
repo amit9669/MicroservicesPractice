@@ -1,0 +1,21 @@
+package com.example.demo.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.demo.binding.StockCalcResponse;
+import com.example.demo.binding.StockPriceResponse;
+
+@Service
+public class StockPriceService {
+
+	@Autowired
+	private StockPriceResponse priceResponse;
+	
+	public StockCalcResponse getStocksCost(String cName, Integer quantity) {
+		
+		StockCalcResponse response = new StockCalcResponse();
+		
+		return response;
+	}
+}

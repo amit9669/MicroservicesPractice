@@ -1,0 +1,14 @@
+package com.example.demo.binding;
+
+import lombok.*;
+
+@Data
+@Getter
+@Setter
+public class StockPriceResponse {
+
+	private String companyName;
+	private Double companyStockPrice;
+	private Integer portNumber;
+
+}

@@ -1,0 +1,8 @@
+spring.application.name=Gateway-API
+server.port=3333
+
+zuul.prefix=/ms
+zuul.routes.greet.path=/api1/**
+zuul.routes.greet.serviceId=Greet-API
+zuul.routes.welcome.path=/api2/**
+zuul.routes.welcome.serviceId=Welcome-API

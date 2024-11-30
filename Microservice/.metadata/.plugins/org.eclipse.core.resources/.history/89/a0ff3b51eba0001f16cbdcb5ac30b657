@@ -1,0 +1,11 @@
+spring.application.name=Gateway-API
+
+Server.port=3333
+
+eureka.client.service-url.defaultZone=${DISCOVERY_URL:http://localhost:9090}/eureka/
+
+zuul.prefix= /ms
+zuul.routes.greet.path=/api1/**
+zuul.routes.greet.serviceId=Greet-API
+zuul.routes.welcome.path=/api2/**
+zuul.routes.greet.serviceId=Welcome-API

@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: API-Gateway
+
+server:
+  port: 3333
+
+zuul:
+  routes:
+    greet:
+      path: /ms/api1/**
+      serviceId: Greet-API
+    welcome:
+      path: /ms/api2/**
+      serviceId: Welcome-API
+
+  http:
+    connect-timeout-millis: 3000
+    read-timeout-millis: 5000
